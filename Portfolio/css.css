@@ -1,0 +1,122 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+}
+li {
+    display: list-item;
+    margin: 10px;
+}
+.navigation-item a {
+    text-decoration: none;
+    color: black;
+}
+.navigation-item a:hover{
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+.aboutTextBox {
+width: 100%;
+padding-right: 20px;
+padding-left: 0;
+}
+.aboutContainer img{
+width: 150px;
+object-fit: contain;
+margin: 0 auto;
+padding-bottom: 20px;
+}
+.aboutContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+.skills-container a{
+    height: 30px;
+    display: flex;
+}
+.skills-container img{
+    width: 40px;
+    padding-right: 20px;
+}
+.projectsContainer img {
+    width: 300px;
+    padding: 50px;
+    transition: transform 0.3s ease;
+}
+.projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 20px;
+}
+.projectsContainer img:hover {
+    transform: scale(1.2); 
+}
+
+.navbar-wrapper.sticky {
+    position: fixed;
+    top: 0;
+    width: 900px;
+    background-color: white;
+    border-bottom: 1px black solid;
+    z-index: 1;
+}
+.contactContainer a{
+color: black;
+}
+.date {
+    color: grey;
+}
+@media only screen and (max-width: 600px) {
+    /* Adjusting the font size for small screens */
+    body {
+        font-size: 16px;
+    }
+    .aboutTextBox {
+        width: 100%;
+        padding-right: 0;
+    }
+    .aboutContainer img {
+        width: 100px;
+        padding-bottom: 10px;
+    }
+    .skills-container img {
+        width: 50px;
+        padding: 5px;
+    }
+    .projectsContainer img {
+        width: 150px;
+        padding-right: 20px;
+    }
+}
+.navHome {
+    width: 900px;
+
+}
